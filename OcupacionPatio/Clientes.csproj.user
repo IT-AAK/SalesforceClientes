@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Calendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CorreoProv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CuerpoCorreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProveedoresNuevos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

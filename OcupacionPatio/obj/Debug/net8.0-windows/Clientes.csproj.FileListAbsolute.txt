@@ -1,0 +1,68 @@
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.csproj.AssemblyReference.cache
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Interop.Microsoft.Office.Interop.Outlook.dll
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.csproj.ResolveComReference.cache
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\OcupacionPatio.Calendario.resources
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\OcupacionPatio.citas.resources
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\OcupacionPatio.CorreoProv.resources
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\OcupacionPatio.CuerpoCorreo.resources
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\OcupacionPatio.Form1.resources
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\OcupacionPatio.inicio.resources
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.Properties.Resources.resources
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\OcupacionPatio.proveedores.resources
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\OcupacionPatio.ProveedoresNuevos.resources
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.csproj.GenerateResource.cache
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.AssemblyInfoInputs.cache
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.AssemblyInfo.cs
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.csproj.CoreCompileInputs.cache
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\bin\Debug\net8.0-windows\Clientes.exe
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\bin\Debug\net8.0-windows\Clientes.deps.json
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\bin\Debug\net8.0-windows\Clientes.runtimeconfig.json
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\bin\Debug\net8.0-windows\Clientes.dll
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\bin\Debug\net8.0-windows\Clientes.pdb
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.csproj.Up2Date
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.dll
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\refint\Clientes.dll
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.pdb
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.genruntimeconfig.cache
+C:\Users\esva\Downloads\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\ref\Clientes.dll
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\bin\Debug\net8.0-windows\Clientes.exe
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\bin\Debug\net8.0-windows\Clientes.deps.json
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\bin\Debug\net8.0-windows\Clientes.runtimeconfig.json
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\bin\Debug\net8.0-windows\Clientes.dll
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\bin\Debug\net8.0-windows\Clientes.pdb
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.csproj.AssemblyReference.cache
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Interop.Microsoft.Office.Interop.Outlook.dll
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.csproj.ResolveComReference.cache
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.Calendario.resources
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.citas.resources
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.CorreoProv.resources
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.CuerpoCorreo.resources
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.Form1.resources
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.inicio.resources
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.Properties.Resources.resources
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.proveedores.resources
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.ProveedoresNuevos.resources
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.csproj.GenerateResource.cache
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.AssemblyInfoInputs.cache
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.AssemblyInfo.cs
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.csproj.CoreCompileInputs.cache
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.csproj.Up2Date
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.dll
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\refint\Clientes.dll
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.pdb
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.genruntimeconfig.cache
+C:\Users\esva\source\repos\Clientes - Copy\OcupacionPatio\obj\Debug\net8.0-windows\ref\Clientes.dll

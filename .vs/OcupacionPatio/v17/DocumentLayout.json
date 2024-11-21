@@ -1,0 +1,229 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\esva\\Downloads\\Clientes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\correoprov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\correoprov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\correoprov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\correoprov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\proveedoresnuevos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\proveedoresnuevos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\proveedoresnuevos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\proveedoresnuevos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|c:\\users\\esva\\downloads\\clientes\\ocupacionpatio\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\OcupacionPatio.csproj|solutionrelative:ocupacionpatio\\citas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProveedoresNuevos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\ProveedoresNuevos.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\ProveedoresNuevos.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\ProveedoresNuevos.cs [Design]",
+              "RelativeToolTip": "OcupacionPatio\\ProveedoresNuevos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T21:01:28.944Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CorreoProv.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\CorreoProv.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\CorreoProv.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\CorreoProv.cs [Design]",
+              "RelativeToolTip": "OcupacionPatio\\CorreoProv.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T20:39:53.765Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\Conexion.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\Conexion.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\Conexion.cs",
+              "RelativeToolTip": "OcupacionPatio\\Conexion.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T17:11:36.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProveedoresNuevos.cs",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\ProveedoresNuevos.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\ProveedoresNuevos.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\ProveedoresNuevos.cs",
+              "RelativeToolTip": "OcupacionPatio\\ProveedoresNuevos.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAASwBAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T21:13:40.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CorreoProv.cs",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\CorreoProv.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\CorreoProv.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\CorreoProv.cs",
+              "RelativeToolTip": "OcupacionPatio\\CorreoProv.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T17:42:36.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "citas.cs",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\citas.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\citas.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\citas.cs",
+              "RelativeToolTip": "OcupacionPatio\\citas.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwFMAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T16:25:39.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "citas.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\citas.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\citas.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\citas.cs [Design]",
+              "RelativeToolTip": "OcupacionPatio\\citas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T14:35:18.812Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "inicio.cs",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\inicio.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\inicio.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\inicio.cs",
+              "RelativeToolTip": "OcupacionPatio\\inicio.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T17:27:48.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "inicio.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\inicio.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\inicio.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\inicio.cs [Design]",
+              "RelativeToolTip": "OcupacionPatio\\inicio.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:09:59.577Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "proveedores.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\proveedores.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\proveedores.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\proveedores.cs [Design]",
+              "RelativeToolTip": "OcupacionPatio\\proveedores.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T17:37:30.491Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "proveedores.cs",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\proveedores.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\proveedores.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\proveedores.cs",
+              "RelativeToolTip": "OcupacionPatio\\proveedores.cs",
+              "ViewState": "AQIAAOgAAAAAAAAAAIAwwPwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T17:01:09.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\Form1.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\Form1.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\Form1.cs",
+              "RelativeToolTip": "OcupacionPatio\\Form1.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAApwDYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T22:05:39.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\Form1.cs",
+              "RelativeDocumentMoniker": "OcupacionPatio\\Form1.cs",
+              "ToolTip": "C:\\Users\\esva\\Downloads\\Clientes\\OcupacionPatio\\Form1.cs [Design]",
+              "RelativeToolTip": "OcupacionPatio\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T17:41:32.463Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

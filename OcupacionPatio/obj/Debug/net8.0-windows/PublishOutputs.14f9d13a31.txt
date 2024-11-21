@@ -1,0 +1,11 @@
+C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\bin\Debug\net8.0-windows\publish\OcupacionPatio.exe
+C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\bin\Debug\net8.0-windows\publish\OcupacionPatio.dll
+C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\bin\Debug\net8.0-windows\publish\OcupacionPatio.deps.json
+C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\bin\Debug\net8.0-windows\publish\OcupacionPatio.runtimeconfig.json
+C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\bin\Debug\net8.0-windows\publish\OcupacionPatio.pdb
+C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\bin\Debug\net8.0-windows\publish\System.Data.SqlClient.dll
+C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\bin\Debug\net8.0-windows\publish\runtimes\win-arm64\native\sni.dll
+C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\bin\Debug\net8.0-windows\publish\runtimes\win-x64\native\sni.dll
+C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\bin\Debug\net8.0-windows\publish\runtimes\win-x86\native\sni.dll
+C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\bin\Debug\net8.0-windows\publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\bin\Debug\net8.0-windows\publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
