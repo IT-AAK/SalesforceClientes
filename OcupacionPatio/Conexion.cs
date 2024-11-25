@@ -27,10 +27,10 @@ namespace Clientes
 
         public Dictionary<string, string> datosServidor = new Dictionary<string, string>()
         {
-                {"servidor", "DESAFIVE-MOR-MX"},
+                {"servidor", "ERP-MOR-MX"},
                 {"userId", "Consultas"},
                 {"password","Consultas"},
-                {"bd","Clientes_Test"}
+                {"bd","AUMXAPPTEST"}
         };
 
         public void actualizarDatos(string bd)
@@ -94,57 +94,51 @@ namespace Clientes
             }
         }
 
-        //Pantalla Proveedores
-        public SqlCommand visualizarDatosVendor(int operacion, string name, string rfc, string status, string kind, string notification)
+        //================================== Pantalla Registro SAPRegGroup =======================================================
+        public SqlCommand visualizarDatosClientes(int operacion)
         {
-            SqlCommand cmd = new SqlCommand("zSP_Clientes", conn)
+            SqlCommand cmd = new SqlCommand("zSP_SapRegGroup", conn)
             {
                 CommandType = CommandType.StoredProcedure
             };
 
             cmd.Parameters.AddWithValue("@tynOperacion", operacion);
-            cmd.Parameters.AddWithValue("@Name", name);
-            cmd.Parameters.AddWithValue("@RFC", rfc);
-            cmd.Parameters.AddWithValue("@Status", status);
-            cmd.Parameters.AddWithValue("@Kind", kind);
-            cmd.Parameters.AddWithValue("@Kind2", "");
-            cmd.Parameters.AddWithValue("@Kind3", "");
-            cmd.Parameters.AddWithValue("@Kind4", "");
-            cmd.Parameters.AddWithValue("@Email", "");
-            cmd.Parameters.AddWithValue("@Notification", notification);
-            cmd.Parameters.AddWithValue("@FechaCita", "");
-            cmd.Parameters.AddWithValue("@subject", "");
-            cmd.Parameters.AddWithValue("@title", "");
-            cmd.Parameters.AddWithValue("@subtitle", "");
-            cmd.Parameters.AddWithValue("@body", "");
+            cmd.Parameters.AddWithValue("@CustID", "");
+            cmd.Parameters.AddWithValue("@NameCust", "");
+            cmd.Parameters.AddWithValue("@SAPRG", "");
 
             return cmd;
         }
 
-        public void FiltrarPorNombreProveedor(string nombreProveedor, DataGridView dvg)
+        public SqlCommand visualizarListaSapRegGroup(int operacion)
+        {
+            SqlCommand cmd = new SqlCommand("zSP_SapRegGroup", conn)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+
+            cmd.Parameters.AddWithValue("@tynOperacion", operacion);
+            cmd.Parameters.AddWithValue("@CustID", "");
+            cmd.Parameters.AddWithValue("@NameCust", "");
+            cmd.Parameters.AddWithValue("@SAPRG", "");
+
+            return cmd;
+        }
+
+        //Busqueda dinamica por el ID
+        public void FiltrarPorCustID(string CustID, DataGridView dvg)
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("zSP_Clientes", conn);
+                SqlCommand cmd = new SqlCommand("zSP_SapRegGroup", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 // Agregamos el parámetro del procedimiento almacenado
-                cmd.Parameters.AddWithValue("@Name", "%" + nombreProveedor + "%");
-                cmd.Parameters.AddWithValue("@tynOperacion", 2);
+                cmd.Parameters.AddWithValue("@tynOperacion", 3);
+                cmd.Parameters.AddWithValue("@CustID", "%" + CustID + "%");
                 // Se agregan los parámetros para evitar error en la base de datos
-                cmd.Parameters.AddWithValue("@RFC", "");
-                cmd.Parameters.AddWithValue("@Status", "");
-                cmd.Parameters.AddWithValue("@Kind", "");
-                cmd.Parameters.AddWithValue("@Kind2", "");
-                cmd.Parameters.AddWithValue("@Kind3", "");
-                cmd.Parameters.AddWithValue("@Kind4", "");
-                cmd.Parameters.AddWithValue("@Email", "");
-                cmd.Parameters.AddWithValue("@Notification", "");
-                cmd.Parameters.AddWithValue("@FechaCita", "");
-                cmd.Parameters.AddWithValue("@subject", "");
-                cmd.Parameters.AddWithValue("@title", "");
-                cmd.Parameters.AddWithValue("@subtitle", "");
-                cmd.Parameters.AddWithValue("@body", "");
+                cmd.Parameters.AddWithValue("@NameCust", "");
+                cmd.Parameters.AddWithValue("@SAPRG", "");
 
                 using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                 {
@@ -165,33 +159,21 @@ namespace Clientes
             }
         }
 
-        //Busqueda dinamica por el RFC
-        public void FiltrarPorRFC(string rfcProveedor, DataGridView dvg)
+        //Busqueda dinamica por el Nombre
+        public void FiltrarPorNombre(string NameCust, DataGridView dvg)
         {
             try
             {
-                using (SqlCommand cmd = new SqlCommand("zSP_Clientes", conn))
+                using (SqlCommand cmd = new SqlCommand("zSP_SapRegGroup", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     //Agregamos el párametro del procedimiento almacenado
-                    cmd.Parameters.AddWithValue("@RFC", "%" + rfcProveedor + "%");
-                    cmd.Parameters.AddWithValue("@tynOperacion", 3);
-                    //Se agregan los párametros para evitar error en la base de datos
-                    cmd.Parameters.AddWithValue("@Name", "");
-                    cmd.Parameters.AddWithValue("@Status", "");
-                    cmd.Parameters.AddWithValue("@Kind", "");
-                    cmd.Parameters.AddWithValue("@Kind2", "");
-                    cmd.Parameters.AddWithValue("@Kind3", "");
-                    cmd.Parameters.AddWithValue("@Kind4", "");
-                    cmd.Parameters.AddWithValue("@Email", "");
-                    cmd.Parameters.AddWithValue("@Notification", "");
-                    cmd.Parameters.AddWithValue("@FechaCita", "");
-                    cmd.Parameters.AddWithValue("@subject", "");
-                    cmd.Parameters.AddWithValue("@title", "");
-                    cmd.Parameters.AddWithValue("@subtitle", "");
-                    cmd.Parameters.AddWithValue("@body", "");
-
+                    cmd.Parameters.AddWithValue("@tynOperacion", 4);
+                    cmd.Parameters.AddWithValue("@NameCust", "%" + NameCust + "%");
+                    // Se agregan los parámetros para evitar error en la base de datos
+                    cmd.Parameters.AddWithValue("@CustID", "");
+                    cmd.Parameters.AddWithValue("@SAPRG", "");
 
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                     {
@@ -213,31 +195,46 @@ namespace Clientes
             }
         }
 
-
-        public void InsertVendor(string name, string rfc, string status, string kind, string kind2, string kind3, string kind4)
+        public bool ValidateInputs(string custID, string NameCust)
         {
+            // Verifica si el campo CustID está vacío
+            if (string.IsNullOrWhiteSpace(custID))
+            {
+                MessageBox.Show("El campo ID Cliente del cliente no puede estar vacío.");
+                return false;
+            }
+
+            // Verifica si el campo NameCust está vacío
+            if (string.IsNullOrWhiteSpace(NameCust))
+            {
+                MessageBox.Show("El campo Nombre Cliente no puede estar vacío.");
+                return false;
+            }
+
+            // Si ambos campos tienen datos, retorna true
+            return true;
+        }
+
+        public void InsertSapRegGroup(string custID, string NameCust, string sapRegGroup)
+        {
+            // Validar que los campos no estén vacíos
+            if (!ValidateInputs(custID, NameCust))
+            {
+                return; // Si la validación falla, no continuar con el insert
+            }
+
             try
             {
-                using (SqlCommand cmd = new SqlCommand("zSP_Clientes", conn))
+                using (SqlCommand cmd = new SqlCommand("zSP_SapRegGroup", conn))
                 {
 
                     cmd.CommandType = CommandType.StoredProcedure;
                     // Configurar los parámetros del comando
-                    cmd.Parameters.AddWithValue("@Name", name);
-                    cmd.Parameters.AddWithValue("@RFC", rfc);
-                    cmd.Parameters.AddWithValue("@Status", status);
-                    cmd.Parameters.AddWithValue("@Kind", kind);
-                    cmd.Parameters.AddWithValue("@Kind2", kind2);
-                    cmd.Parameters.AddWithValue("@Kind3", kind3);
-                    cmd.Parameters.AddWithValue("@Kind4", kind4);
-                    cmd.Parameters.AddWithValue("@Email", "");
-                    cmd.Parameters.AddWithValue("@Notification", 0);
-                    cmd.Parameters.AddWithValue("@tynOperacion", 4);
-                    cmd.Parameters.AddWithValue("@FechaCita", "");
-                    cmd.Parameters.AddWithValue("@subject", "");
-                    cmd.Parameters.AddWithValue("@title", "");
-                    cmd.Parameters.AddWithValue("@subtitle", "");
-                    cmd.Parameters.AddWithValue("@body", "");
+                    cmd.Parameters.AddWithValue("@tynOperacion", 20);
+                    cmd.Parameters.AddWithValue("@CustID",custID);
+                    cmd.Parameters.AddWithValue("@NameCust", NameCust);
+                    cmd.Parameters.AddWithValue("@SAPRG", sapRegGroup);
+
 
                     // Ejecutar el comando
                     cmd.ExecuteNonQuery();
@@ -252,208 +249,181 @@ namespace Clientes
                 MessageBox.Show("Ocurrió un error: " + ex.Message);
             }
         }
-        //Fin Pantalla Proveedores
 
 
-        //Pantalla Inicio
-        public SqlCommand VisualizarOcipacionPatio(int operacion)
+        //================================== Pantalla Consulta SAPRegGroup =======================================================
+
+        //Pantalla Consulta Clientes SAPRegGroup
+
+        public SqlCommand visualizarDatosClientesSRG(int operacion)
         {
-            SqlCommand cmd = new SqlCommand("zSP_Clientes", conn)
+            SqlCommand cmd = new SqlCommand("zSP_SapRegGroup", conn)
             {
                 CommandType = CommandType.StoredProcedure
             };
 
             cmd.Parameters.AddWithValue("@tynOperacion", operacion);
-            cmd.Parameters.AddWithValue("@Name", "");
-            cmd.Parameters.AddWithValue("@RFC", "");
-            cmd.Parameters.AddWithValue("@Status", "");
-            cmd.Parameters.AddWithValue("@Kind", "");
-            cmd.Parameters.AddWithValue("@Kind2", "");
-            cmd.Parameters.AddWithValue("@Kind3", "");
-            cmd.Parameters.AddWithValue("@Kind4", "");
-            cmd.Parameters.AddWithValue("@Email", "");
-            cmd.Parameters.AddWithValue("@Notification", "");
-            cmd.Parameters.AddWithValue("@FechaCita", "");
-            cmd.Parameters.AddWithValue("@subject", "");
-            cmd.Parameters.AddWithValue("@title", "");
-            cmd.Parameters.AddWithValue("@subtitle", "");
-            cmd.Parameters.AddWithValue("@body", "");
-
 
             return cmd;
         }
 
-        public void InsertRegistroEnvioCorreo(string name, string rfc, string kindValue, string email)
-        {
-            string datosConexion2 = "Data Source = " + datosServidor["servidor"] + ";" + "user id = " + datosServidor["userId"] + ";" + "password= " + datosServidor["password"] + ";" + "Initial Catalog = " + datosServidor["bd"] + ";";
-            SqlConnection conn2 = new SqlConnection(datosConexion2);
+        //public SqlCommand VisualizarOcipacionPatio(int operacion)
+        //{
+        //    SqlCommand cmd = new SqlCommand("zSP_Clientes", conn)
+        //    {
+        //        CommandType = CommandType.StoredProcedure
+        //    };
 
-            try
-            {
-                using (SqlCommand cmd = new SqlCommand("zSP_Clientes", conn2))
-                {
-                    conn2.Open();
+        //    cmd.Parameters.AddWithValue("@tynOperacion", operacion);
+        //    cmd.Parameters.AddWithValue("@Name", "");
+        //    cmd.Parameters.AddWithValue("@RFC", "");
+        //    cmd.Parameters.AddWithValue("@Status", "");
+        //    cmd.Parameters.AddWithValue("@Kind", "");
+        //    cmd.Parameters.AddWithValue("@Kind2", "");
+        //    cmd.Parameters.AddWithValue("@Kind3", "");
+        //    cmd.Parameters.AddWithValue("@Kind4", "");
+        //    cmd.Parameters.AddWithValue("@Email", "");
+        //    cmd.Parameters.AddWithValue("@Notification", "");
+        //    cmd.Parameters.AddWithValue("@FechaCita", "");
+        //    cmd.Parameters.AddWithValue("@subject", "");
+        //    cmd.Parameters.AddWithValue("@title", "");
+        //    cmd.Parameters.AddWithValue("@subtitle", "");
+        //    cmd.Parameters.AddWithValue("@body", "");
 
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Name", name);
-                    cmd.Parameters.AddWithValue("@RFC", rfc);
-                    cmd.Parameters.AddWithValue("@Email", email);
-                    cmd.Parameters.AddWithValue("@FechaCita", ""); 
-                    cmd.Parameters.AddWithValue("@Status", "");    
-                    cmd.Parameters.AddWithValue("@Kind", kindValue);
-                    cmd.Parameters.AddWithValue("@Kind2", "");
-                    cmd.Parameters.AddWithValue("@Kind3", "");
-                    cmd.Parameters.AddWithValue("@Kind4", "");
-                    cmd.Parameters.AddWithValue("@Notification", "");
-                    cmd.Parameters.AddWithValue("@subject", "");
-                    cmd.Parameters.AddWithValue("@title", "");
-                    cmd.Parameters.AddWithValue("@subtitle", "");
-                    cmd.Parameters.AddWithValue("@body", "");
-                    cmd.Parameters.AddWithValue("@tynOperacion", 9);
 
-                    cmd.ExecuteNonQuery();
+        //    return cmd;
 
-                    conn2.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al insertar registro de correo: " + ex.Message + "\nStackTrace: " + ex.StackTrace);
-            }
+        //public SqlCommand VisualizarEmail(int operacion)
+        //{
+        //string datosConexion2 = "Data Source = " + datosServidor["servidor"] + ";" + "user id = " + datosServidor["userId"] + ";" + "password= " + datosServidor["password"] + ";" + "Initial Catalog = " + datosServidor["bd"] + ";";
+        //SqlConnection conn2 = new SqlConnection(datosConexion2);
 
-        }
+        //try
+        //{
+        //    SqlCommand cmd = new SqlCommand("zSP_Clientes", conn2)
+        //    {
+        //        CommandType = CommandType.StoredProcedure
+        //    };
+        //    conn2.Open();
+        //    cmd.Parameters.AddWithValue("@Name", "");
+        //    cmd.Parameters.AddWithValue("@RFC", "");
+        //    cmd.Parameters.AddWithValue("@Email", "");
+        //    cmd.Parameters.AddWithValue("@FechaCita", "");
+        //    cmd.Parameters.AddWithValue("@Status", "");
+        //    cmd.Parameters.AddWithValue("@Kind", "");
+        //    cmd.Parameters.AddWithValue("@Kind2", "");
+        //    cmd.Parameters.AddWithValue("@Kind3", "");
+        //    cmd.Parameters.AddWithValue("@Kind4", "");
+        //    cmd.Parameters.AddWithValue("@Notification", "");
+        //    cmd.Parameters.AddWithValue("@subject", "");
+        //    cmd.Parameters.AddWithValue("@title", "");
+        //    cmd.Parameters.AddWithValue("@subtitle", "");
+        //    cmd.Parameters.AddWithValue("@body", "");
+        //    cmd.Parameters.AddWithValue("@tynOperacion", 10);
 
-        public SqlCommand VisualizarEmail(int operacion)
-        {
-            string datosConexion2 = "Data Source = " + datosServidor["servidor"] + ";" + "user id = " + datosServidor["userId"] + ";" + "password= " + datosServidor["password"] + ";" + "Initial Catalog = " + datosServidor["bd"] + ";";
-            SqlConnection conn2 = new SqlConnection(datosConexion2);
-
-            try
-            {
-                SqlCommand cmd = new SqlCommand("zSP_Clientes", conn2)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                conn2.Open();
-                cmd.Parameters.AddWithValue("@Name", "");
-                cmd.Parameters.AddWithValue("@RFC", "");
-                cmd.Parameters.AddWithValue("@Email", "");
-                cmd.Parameters.AddWithValue("@FechaCita", "");
-                cmd.Parameters.AddWithValue("@Status", "");
-                cmd.Parameters.AddWithValue("@Kind", "");
-                cmd.Parameters.AddWithValue("@Kind2", "");
-                cmd.Parameters.AddWithValue("@Kind3", "");
-                cmd.Parameters.AddWithValue("@Kind4", "");
-                cmd.Parameters.AddWithValue("@Notification", "");
-                cmd.Parameters.AddWithValue("@subject", "");
-                cmd.Parameters.AddWithValue("@title", "");
-                cmd.Parameters.AddWithValue("@subtitle", "");
-                cmd.Parameters.AddWithValue("@body", "");
-                cmd.Parameters.AddWithValue("@tynOperacion", 10);
-
-                return cmd;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al visualizar email: " + ex.Message + "\nStackTrace: " + ex.StackTrace);
-                return null;
-            }
-        }
+        //    return cmd;
+        //}
+        //catch (Exception ex)
+        //{
+        //    MessageBox.Show("Error al visualizar email: " + ex.Message + "\nStackTrace: " + ex.StackTrace);
+        //    return null;
+        //}
+        //}
         //Fin Pantalla Inicio
 
 
         //Pantalla Citas
-        public SqlCommand ListaProveedores(int operacion)
-        {
-            SqlCommand cmd = new SqlCommand("zSP_Clientes", conn)
-            {
-                CommandType = CommandType.StoredProcedure
-            };
+        //public SqlCommand ListaProveedores(int operacion)
+        //{
+        //    SqlCommand cmd = new SqlCommand("zSP_Clientes", conn)
+        //    {
+        //        CommandType = CommandType.StoredProcedure
+        //    };
 
-            cmd.Parameters.AddWithValue("@tynOperacion", operacion);
-            cmd.Parameters.AddWithValue("@Name", "");
-            cmd.Parameters.AddWithValue("@RFC", "");
-            cmd.Parameters.AddWithValue("@Status", "");
-            cmd.Parameters.AddWithValue("@Kind", "");
-            cmd.Parameters.AddWithValue("@Kind2", "");
-            cmd.Parameters.AddWithValue("@Kind3", "");
-            cmd.Parameters.AddWithValue("@Kind4", "");
-            cmd.Parameters.AddWithValue("@Email", "");
-            cmd.Parameters.AddWithValue("@Notification", "");
-            cmd.Parameters.AddWithValue("@FechaCita", "");
-            cmd.Parameters.AddWithValue("@subject", "");
-            cmd.Parameters.AddWithValue("@title", "");
-            cmd.Parameters.AddWithValue("@subtitle", "");
-            cmd.Parameters.AddWithValue("@body", "");
-
-
-            return cmd;
-        }
-
-        public SqlCommand VisualizarProveedores(int operacion)
-        {
-            SqlCommand cmd = new SqlCommand("zSP_Clientes", conn)
-            {
-                CommandType = CommandType.StoredProcedure
-            };
-
-            cmd.Parameters.AddWithValue("@tynOperacion", operacion);
-            cmd.Parameters.AddWithValue("@Name", "");
-            cmd.Parameters.AddWithValue("@RFC", "");
-            cmd.Parameters.AddWithValue("@Status", "");
-            cmd.Parameters.AddWithValue("@Kind", "");
-            cmd.Parameters.AddWithValue("@Kind2", "");
-            cmd.Parameters.AddWithValue("@Kind3", "");
-            cmd.Parameters.AddWithValue("@Kind4", "");
-            cmd.Parameters.AddWithValue("@Email", "");
-            cmd.Parameters.AddWithValue("@Notification", "");
-            cmd.Parameters.AddWithValue("@FechaCita", "");
-            cmd.Parameters.AddWithValue("@subject", "");
-            cmd.Parameters.AddWithValue("@title", "");
-            cmd.Parameters.AddWithValue("@subtitle", "");
-            cmd.Parameters.AddWithValue("@body", "");
+        //    cmd.Parameters.AddWithValue("@tynOperacion", operacion);
+        //    cmd.Parameters.AddWithValue("@Name", "");
+        //    cmd.Parameters.AddWithValue("@RFC", "");
+        //    cmd.Parameters.AddWithValue("@Status", "");
+        //    cmd.Parameters.AddWithValue("@Kind", "");
+        //    cmd.Parameters.AddWithValue("@Kind2", "");
+        //    cmd.Parameters.AddWithValue("@Kind3", "");
+        //    cmd.Parameters.AddWithValue("@Kind4", "");
+        //    cmd.Parameters.AddWithValue("@Email", "");
+        //    cmd.Parameters.AddWithValue("@Notification", "");
+        //    cmd.Parameters.AddWithValue("@FechaCita", "");
+        //    cmd.Parameters.AddWithValue("@subject", "");
+        //    cmd.Parameters.AddWithValue("@title", "");
+        //    cmd.Parameters.AddWithValue("@subtitle", "");
+        //    cmd.Parameters.AddWithValue("@body", "");
 
 
-            return cmd;
-        }
+        //    return cmd;
+        //}
+
+        //public SqlCommand VisualizarProveedores(int operacion)
+        //{
+        //    SqlCommand cmd = new SqlCommand("zSP_Clientes", conn)
+        //    {
+        //        CommandType = CommandType.StoredProcedure
+        //    };
+
+        //    cmd.Parameters.AddWithValue("@tynOperacion", operacion);
+        //    cmd.Parameters.AddWithValue("@Name", "");
+        //    cmd.Parameters.AddWithValue("@RFC", "");
+        //    cmd.Parameters.AddWithValue("@Status", "");
+        //    cmd.Parameters.AddWithValue("@Kind", "");
+        //    cmd.Parameters.AddWithValue("@Kind2", "");
+        //    cmd.Parameters.AddWithValue("@Kind3", "");
+        //    cmd.Parameters.AddWithValue("@Kind4", "");
+        //    cmd.Parameters.AddWithValue("@Email", "");
+        //    cmd.Parameters.AddWithValue("@Notification", "");
+        //    cmd.Parameters.AddWithValue("@FechaCita", "");
+        //    cmd.Parameters.AddWithValue("@subject", "");
+        //    cmd.Parameters.AddWithValue("@title", "");
+        //    cmd.Parameters.AddWithValue("@subtitle", "");
+        //    cmd.Parameters.AddWithValue("@body", "");
+
+
+        //    return cmd;
+        //}
 
         public void InsertCita(string name, string rfc, string email, DateTime FechaCita)
         {
-            try
-            {
-                using (SqlCommand cmd = new SqlCommand("zSP_Clientes", conn))
-                {
+            //try
+            //{
+            //    using (SqlCommand cmd = new SqlCommand("zSP_Clientes", conn))
+            //    {
 
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    // Configurar los parámetros del comando
-                    cmd.Parameters.AddWithValue("@Name", name);
-                    cmd.Parameters.AddWithValue("@RFC", rfc);
-                    cmd.Parameters.AddWithValue("@Email", email);
-                    cmd.Parameters.AddWithValue("@FechaCita", FechaCita);
-                    cmd.Parameters.AddWithValue("@Status", "");
-                    cmd.Parameters.AddWithValue("@Kind", "");
-                    cmd.Parameters.AddWithValue("@Kind2", "");
-                    cmd.Parameters.AddWithValue("@Kind3", "");
-                    cmd.Parameters.AddWithValue("@Kind4", "");
-                    cmd.Parameters.AddWithValue("@Notification", "");
-                    cmd.Parameters.AddWithValue("@subject", "");
-                    cmd.Parameters.AddWithValue("@title", "");
-                    cmd.Parameters.AddWithValue("@subtitle", "");
-                    cmd.Parameters.AddWithValue("@body", "");
-                    cmd.Parameters.AddWithValue("@tynOperacion", 8);
+            //        cmd.CommandType = CommandType.StoredProcedure;
+            //        // Configurar los parámetros del comando
+            //        cmd.Parameters.AddWithValue("@Name", name);
+            //        cmd.Parameters.AddWithValue("@RFC", rfc);
+            //        cmd.Parameters.AddWithValue("@Email", email);
+            //        cmd.Parameters.AddWithValue("@FechaCita", FechaCita);
+            //        cmd.Parameters.AddWithValue("@Status", "");
+            //        cmd.Parameters.AddWithValue("@Kind", "");
+            //        cmd.Parameters.AddWithValue("@Kind2", "");
+            //        cmd.Parameters.AddWithValue("@Kind3", "");
+            //        cmd.Parameters.AddWithValue("@Kind4", "");
+            //        cmd.Parameters.AddWithValue("@Notification", "");
+            //        cmd.Parameters.AddWithValue("@subject", "");
+            //        cmd.Parameters.AddWithValue("@title", "");
+            //        cmd.Parameters.AddWithValue("@subtitle", "");
+            //        cmd.Parameters.AddWithValue("@body", "");
+            //        cmd.Parameters.AddWithValue("@tynOperacion", 8);
 
-                    // Ejecutar el comando
-                    cmd.ExecuteNonQuery();
+            //        // Ejecutar el comando
+            //        cmd.ExecuteNonQuery();
 
-                    // Mostrar mensaje de éxito
-                    MessageBox.Show("Se agregó exitosamente.");
-                }
-            }
-            catch (Exception ex)
-            {
-                // Manejar cualquier error
-                MessageBox.Show("Ocurrió un error: " + ex.Message);
-            }
+            //        // Mostrar mensaje de éxito
+            //        MessageBox.Show("Se agregó exitosamente.");
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    // Manejar cualquier error
+            //    MessageBox.Show("Ocurrió un error: " + ex.Message);
+            //}
         }
 
         // Cuerpo Correo
@@ -483,41 +453,41 @@ namespace Clientes
 
         public void UpdateCuerpoCorreo(string subject, string title, string subtitle, string body)
         {
-            try
-            {
-                using (SqlCommand cmd = new SqlCommand("zSP_Clientes", conn))
-                {
+            //try
+            //{
+            //    using (SqlCommand cmd = new SqlCommand("zSP_Clientes", conn))
+            //    {
 
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    // Configurar los parámetros del comando
-                    cmd.Parameters.AddWithValue("@Name", "");
-                    cmd.Parameters.AddWithValue("@RFC", "");
-                    cmd.Parameters.AddWithValue("@Email", "");
-                    cmd.Parameters.AddWithValue("@FechaCita", "");
-                    cmd.Parameters.AddWithValue("@Status", "");
-                    cmd.Parameters.AddWithValue("@Kind", "");
-                    cmd.Parameters.AddWithValue("@Kind2", "");
-                    cmd.Parameters.AddWithValue("@Kind3", "");
-                    cmd.Parameters.AddWithValue("@Kind4", "");
-                    cmd.Parameters.AddWithValue("@Notification", "");
-                    cmd.Parameters.AddWithValue("@subject", subject);
-                    cmd.Parameters.AddWithValue("@title", title);
-                    cmd.Parameters.AddWithValue("@subtitle", subtitle);
-                    cmd.Parameters.AddWithValue("@body", body);
-                    cmd.Parameters.AddWithValue("@tynOperacion", 11);
+            //        cmd.CommandType = CommandType.StoredProcedure;
+            //        // Configurar los parámetros del comando
+            //        cmd.Parameters.AddWithValue("@Name", "");
+            //        cmd.Parameters.AddWithValue("@RFC", "");
+            //        cmd.Parameters.AddWithValue("@Email", "");
+            //        cmd.Parameters.AddWithValue("@FechaCita", "");
+            //        cmd.Parameters.AddWithValue("@Status", "");
+            //        cmd.Parameters.AddWithValue("@Kind", "");
+            //        cmd.Parameters.AddWithValue("@Kind2", "");
+            //        cmd.Parameters.AddWithValue("@Kind3", "");
+            //        cmd.Parameters.AddWithValue("@Kind4", "");
+            //        cmd.Parameters.AddWithValue("@Notification", "");
+            //        cmd.Parameters.AddWithValue("@subject", subject);
+            //        cmd.Parameters.AddWithValue("@title", title);
+            //        cmd.Parameters.AddWithValue("@subtitle", subtitle);
+            //        cmd.Parameters.AddWithValue("@body", body);
+            //        cmd.Parameters.AddWithValue("@tynOperacion", 11);
 
-                    // Ejecutar el comando
-                    cmd.ExecuteNonQuery();
+            //        // Ejecutar el comando
+            //        cmd.ExecuteNonQuery();
 
-                    // Mostrar mensaje de éxito
-                    MessageBox.Show("Se actualizó exitosamente.");
-                }
-            }
-            catch (Exception ex)
-            {
-                // Manejar cualquier error
-                MessageBox.Show("Ocurrió un error: " + ex.Message);
-            }
+            //        // Mostrar mensaje de éxito
+            //        MessageBox.Show("Se actualizó exitosamente.");
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    // Manejar cualquier error
+            //    MessageBox.Show("Ocurrió un error: " + ex.Message);
+            //}
         }
 
 

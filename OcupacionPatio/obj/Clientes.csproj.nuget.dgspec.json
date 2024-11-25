@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\esva\\source\\repos\\Clientes - Copy\\OcupacionPatio\\Clientes.csproj": {}
+    "C:\\Users\\esva\\source\\repos\\Clientes\\OcupacionPatio\\Clientes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\esva\\source\\repos\\Clientes - Copy\\OcupacionPatio\\Clientes.csproj": {
+    "C:\\Users\\esva\\source\\repos\\Clientes\\OcupacionPatio\\Clientes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\esva\\source\\repos\\Clientes - Copy\\OcupacionPatio\\Clientes.csproj",
+        "projectUniqueName": "C:\\Users\\esva\\source\\repos\\Clientes\\OcupacionPatio\\Clientes.csproj",
         "projectName": "Clientes",
-        "projectPath": "C:\\Users\\esva\\source\\repos\\Clientes - Copy\\OcupacionPatio\\Clientes.csproj",
+        "projectPath": "C:\\Users\\esva\\source\\repos\\Clientes\\OcupacionPatio\\Clientes.csproj",
         "packagesPath": "C:\\Users\\esva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\esva\\source\\repos\\Clientes - Copy\\OcupacionPatio\\obj\\",
+        "outputPath": "C:\\Users\\esva\\source\\repos\\Clientes\\OcupacionPatio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\esva\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -4,22 +4,10 @@
     <_LastSelectedProfileId>C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="Calendario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="citas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="CorreoProv.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="CuerpoCorreo.cs">
+    <Compile Update="ConsultaCustSRG.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="inicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="proveedores.cs">

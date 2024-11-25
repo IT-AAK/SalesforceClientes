@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OTuQw21vJhHUvH8ymeVp6XFku/DHNEEb+8xsVLWNR+/Z7oqwmS9XY6BvoZIElK7HJXpOOGkva8ip09rbEYjzhA==",
+  "dgSpecHash": "VWH+Q/x7z1OUSYvMuAiiXhWwqcKIivIqzJUAyufT3QRcescUPm2tlWhqdTJeGOHrrPD9VBq39P3HQXK21O6GXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\esva\\source\\repos\\Clientes - Copy\\OcupacionPatio\\Clientes.csproj",
+  "projectFilePath": "C:\\Users\\esva\\source\\repos\\Clientes\\OcupacionPatio\\Clientes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\esva\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\esva\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
