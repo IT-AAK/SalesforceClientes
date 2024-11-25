@@ -63,7 +63,7 @@
             // 
             // label10
             // 
-            label10.Anchor = AnchorStyles.Top;
+            label10.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.Location = new Point(722, 600);
@@ -177,6 +177,7 @@
             // 
             // comboSapRegGroup
             // 
+            comboSapRegGroup.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             comboSapRegGroup.FormattingEnabled = true;
             comboSapRegGroup.Location = new Point(928, 603);
             comboSapRegGroup.Name = "comboSapRegGroup";

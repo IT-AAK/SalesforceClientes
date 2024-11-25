@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\esva\\source\\repos\\Clientes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\Clientes.csproj|c:\\users\\esva\\source\\repos\\clientes\\ocupacionpatio\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\Clientes.csproj|solutionrelative:ocupacionpatio\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\Clientes.csproj|c:\\users\\esva\\source\\repos\\clientes\\ocupacionpatio\\consultacustsrg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\Clientes.csproj|solutionrelative:ocupacionpatio\\consultacustsrg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\Clientes.csproj|c:\\users\\esva\\source\\repos\\clientes\\ocupacionpatio\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\Clientes.csproj|solutionrelative:ocupacionpatio\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\Clientes.csproj|c:\\users\\esva\\source\\repos\\clientes\\ocupacionpatio\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\Clientes.csproj|solutionrelative:ocupacionpatio\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B43F0458-2DB6-4133-ADFA-2B6CFD883C09}|OcupacionPatio\\Clientes.csproj|c:\\users\\esva\\source\\repos\\clientes\\ocupacionpatio\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ConsultaCustSRG.cs",
               "DocumentMoniker": "C:\\Users\\esva\\source\\repos\\Clientes\\OcupacionPatio\\ConsultaCustSRG.cs",
               "RelativeDocumentMoniker": "OcupacionPatio\\ConsultaCustSRG.cs",
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ConsultaCustSRG.cs [Design]",
               "DocumentMoniker": "C:\\Users\\esva\\source\\repos\\Clientes\\OcupacionPatio\\ConsultaCustSRG.cs",
               "RelativeDocumentMoniker": "OcupacionPatio\\ConsultaCustSRG.cs",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "proveedores.cs [Design]",
               "DocumentMoniker": "C:\\Users\\esva\\source\\repos\\Clientes\\OcupacionPatio\\proveedores.cs",
               "RelativeDocumentMoniker": "OcupacionPatio\\proveedores.cs",
@@ -79,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "proveedores.cs",
               "DocumentMoniker": "C:\\Users\\esva\\source\\repos\\Clientes\\OcupacionPatio\\proveedores.cs",
               "RelativeDocumentMoniker": "OcupacionPatio\\proveedores.cs",
@@ -87,8 +87,7 @@
               "RelativeToolTip": "OcupacionPatio\\proveedores.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T15:32:00.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T15:32:00.343Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "OcupacionPatio\\Conexion.cs",
               "ViewState": "AQIAAPMAAAAAAAAAAAAgwAEBAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T21:08:09.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T21:08:09.037Z"
             },
             {
               "$type": "Document",
@@ -117,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\esva\\source\\repos\\Clientes\\OcupacionPatio\\Form1.cs",
               "RelativeDocumentMoniker": "OcupacionPatio\\Form1.cs",
@@ -125,8 +123,7 @@
               "RelativeToolTip": "OcupacionPatio\\Form1.cs",
               "ViewState": "AQIAAH0AAAAAAAAAAAAUwIsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T21:10:53.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T21:10:53.861Z"
             }
           ]
         }
