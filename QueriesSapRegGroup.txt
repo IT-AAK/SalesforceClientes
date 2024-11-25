@@ -1767,7 +1767,7 @@ END
 
 IF (@tynOperacion = 5)
 BEGIN
-	SELECT [Name], C.CustId, ClassId, Country, TaxLocId 
+	SELECT CSRG.CustId, SapRegGroup, InsertDate, LastUpdate, UserCreation 
 	FROM [AUMXAPPTEST].[dbo].[Customer] C WITH(NOLOCK)
 	INNER JOIN [AUMXAPPTEST].[dbo].[zCustomerSapRegGroup] CSRG ON C.CustId = CSRG.CustID
 	WHERE ClassID NOT IN ('V', 'DUMMY')
