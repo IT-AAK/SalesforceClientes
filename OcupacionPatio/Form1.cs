@@ -112,11 +112,6 @@ namespace Clientes
             //openFormPanel(new proveedores());
         }
 
-        private void btnInicio_Click(object sender, EventArgs e)
-        {
-            openFormPanel(new inicio());
-        }
-
         private void btnCitas_Click(object sender, EventArgs e)
         {
             //openFormPanel(new citas());
@@ -134,15 +129,14 @@ namespace Clientes
 
         }
 
-        private void btnMensaje_Click(object sender, EventArgs e)
+        private void panel6_Paint(object sender, PaintEventArgs e)
         {
-            openFormPanel(new CuerpoCorreo());
-            hideSubMenu();
+
         }
 
-        private void btnCorreoProv_Click(object sender, EventArgs e)
+        private void btnSearchCust_Click(object sender, EventArgs e)
         {
-            openFormPanel(new CorreoProv());
+            openFormPanel(new ConsultaCustSRG());
             hideSubMenu();
         }
     }
