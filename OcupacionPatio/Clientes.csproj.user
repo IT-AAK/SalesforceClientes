@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>C:\Users\esva\source\repos\OcupacionPatio\OcupacionPatio\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="AddContractSFOpportunity.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ConsultaCustSRG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -13,7 +16,7 @@
     <Compile Update="proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProveedoresNuevos.cs">
+    <Compile Update="ViewContractSFOpportunity.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

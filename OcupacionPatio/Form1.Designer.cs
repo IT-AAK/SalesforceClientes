@@ -35,13 +35,22 @@
             btnRestore = new PictureBox();
             btnClose = new PictureBox();
             Menu = new Panel();
+            panel13 = new Panel();
+            submenuContract = new Panel();
+            btnSearchContract = new Button();
+            panel12 = new Panel();
+            panel11 = new Panel();
+            btnInsertContract = new Button();
             panel9 = new Panel();
+            panel1 = new Panel();
+            btnContratos = new Button();
             submenu = new Panel();
             btnSearchCust = new Button();
             panel5 = new Panel();
             panel6 = new Panel();
             btnInsertCust = new Button();
             panel8 = new Panel();
+            panel3 = new Panel();
             panel7 = new Panel();
             btnSubProveedores = new Button();
             panel2 = new Panel();
@@ -57,7 +66,10 @@
             ((System.ComponentModel.ISupportInitialize)btnRestore).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnClose).BeginInit();
             Menu.SuspendLayout();
+            submenuContract.SuspendLayout();
+            panel9.SuspendLayout();
             submenu.SuspendLayout();
+            panel8.SuspendLayout();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -133,6 +145,8 @@
             // Menu
             // 
             Menu.BackColor = Color.FromArgb(39, 94, 139);
+            Menu.Controls.Add(panel13);
+            Menu.Controls.Add(submenuContract);
             Menu.Controls.Add(panel9);
             Menu.Controls.Add(submenu);
             Menu.Controls.Add(panel8);
@@ -146,13 +160,121 @@
             Menu.Size = new Size(220, 877);
             Menu.TabIndex = 1;
             // 
+            // panel13
+            // 
+            panel13.Dock = DockStyle.Top;
+            panel13.Location = new Point(0, 499);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(220, 67);
+            panel13.TabIndex = 16;
+            // 
+            // submenuContract
+            // 
+            submenuContract.BackColor = Color.DarkGray;
+            submenuContract.Controls.Add(btnSearchContract);
+            submenuContract.Controls.Add(panel12);
+            submenuContract.Controls.Add(panel11);
+            submenuContract.Controls.Add(btnInsertContract);
+            submenuContract.Dock = DockStyle.Top;
+            submenuContract.Location = new Point(0, 383);
+            submenuContract.Name = "submenuContract";
+            submenuContract.Size = new Size(220, 116);
+            submenuContract.TabIndex = 15;
+            // 
+            // btnSearchContract
+            // 
+            btnSearchContract.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnSearchContract.BackColor = Color.DarkGray;
+            btnSearchContract.Cursor = Cursors.Hand;
+            btnSearchContract.FlatAppearance.BorderSize = 0;
+            btnSearchContract.FlatAppearance.MouseOverBackColor = Color.White;
+            btnSearchContract.FlatStyle = FlatStyle.Flat;
+            btnSearchContract.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold);
+            btnSearchContract.ForeColor = Color.Black;
+            btnSearchContract.Image = (Image)resources.GetObject("btnSearchContract.Image");
+            btnSearchContract.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSearchContract.Location = new Point(11, 60);
+            btnSearchContract.Name = "btnSearchContract";
+            btnSearchContract.Size = new Size(209, 50);
+            btnSearchContract.TabIndex = 17;
+            btnSearchContract.Text = "   Search";
+            btnSearchContract.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSearchContract.UseVisualStyleBackColor = false;
+            btnSearchContract.Click += btnSearchContract_Click;
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.White;
+            panel12.Location = new Point(4, 60);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(5, 50);
+            panel12.TabIndex = 16;
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.White;
+            panel11.Location = new Point(4, 4);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(5, 50);
+            panel11.TabIndex = 12;
+            // 
+            // btnInsertContract
+            // 
+            btnInsertContract.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnInsertContract.BackColor = Color.DarkGray;
+            btnInsertContract.Cursor = Cursors.Hand;
+            btnInsertContract.FlatAppearance.BorderSize = 0;
+            btnInsertContract.FlatAppearance.MouseOverBackColor = Color.White;
+            btnInsertContract.FlatStyle = FlatStyle.Flat;
+            btnInsertContract.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold);
+            btnInsertContract.ForeColor = Color.Black;
+            btnInsertContract.Image = (Image)resources.GetObject("btnInsertContract.Image");
+            btnInsertContract.ImageAlign = ContentAlignment.MiddleLeft;
+            btnInsertContract.Location = new Point(11, 4);
+            btnInsertContract.Name = "btnInsertContract";
+            btnInsertContract.Size = new Size(209, 50);
+            btnInsertContract.TabIndex = 13;
+            btnInsertContract.Text = "   Regsiter";
+            btnInsertContract.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnInsertContract.UseVisualStyleBackColor = false;
+            btnInsertContract.Click += btnInsertContract_Click;
+            // 
             // panel9
             // 
+            panel9.Controls.Add(panel1);
+            panel9.Controls.Add(btnContratos);
             panel9.Dock = DockStyle.Top;
             panel9.Location = new Point(0, 316);
             panel9.Name = "panel9";
-            panel9.Size = new Size(220, 30);
+            panel9.Size = new Size(220, 67);
             panel9.TabIndex = 14;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(26, 32, 40);
+            panel1.Location = new Point(3, 6);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(5, 50);
+            panel1.TabIndex = 7;
+            // 
+            // btnContratos
+            // 
+            btnContratos.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnContratos.BackColor = Color.FromArgb(39, 94, 139);
+            btnContratos.Cursor = Cursors.Hand;
+            btnContratos.FlatAppearance.BorderSize = 0;
+            btnContratos.FlatAppearance.MouseOverBackColor = Color.FromArgb(26, 32, 40);
+            btnContratos.FlatStyle = FlatStyle.Flat;
+            btnContratos.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold);
+            btnContratos.ForeColor = Color.White;
+            btnContratos.ImageAlign = ContentAlignment.MiddleRight;
+            btnContratos.Location = new Point(14, 6);
+            btnContratos.Name = "btnContratos";
+            btnContratos.Size = new Size(206, 50);
+            btnContratos.TabIndex = 8;
+            btnContratos.Text = "CONTRACTS";
+            btnContratos.UseVisualStyleBackColor = false;
+            btnContratos.Click += btnContratos_Click;
             // 
             // submenu
             // 
@@ -183,7 +305,7 @@
             btnSearchCust.Name = "btnSearchCust";
             btnSearchCust.Size = new Size(209, 50);
             btnSearchCust.TabIndex = 15;
-            btnSearchCust.Text = "   Consultar";
+            btnSearchCust.Text = "   Search";
             btnSearchCust.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSearchCust.UseVisualStyleBackColor = false;
             btnSearchCust.Click += btnSearchCust_Click;
@@ -221,18 +343,27 @@
             btnInsertCust.Name = "btnInsertCust";
             btnInsertCust.Size = new Size(209, 50);
             btnInsertCust.TabIndex = 11;
-            btnInsertCust.Text = "   Regsitro";
+            btnInsertCust.Text = "   Register";
             btnInsertCust.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnInsertCust.UseVisualStyleBackColor = false;
             btnInsertCust.Click += button1_Click;
             // 
             // panel8
             // 
+            panel8.Controls.Add(panel3);
             panel8.Dock = DockStyle.Top;
             panel8.Location = new Point(0, 190);
             panel8.Name = "panel8";
             panel8.Size = new Size(220, 10);
             panel8.TabIndex = 12;
+            // 
+            // panel3
+            // 
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(220, 10);
+            panel3.TabIndex = 13;
             // 
             // panel7
             // 
@@ -259,7 +390,7 @@
             btnSubProveedores.Name = "btnSubProveedores";
             btnSubProveedores.Size = new Size(206, 50);
             btnSubProveedores.TabIndex = 7;
-            btnSubProveedores.Text = "SF CLIENTES";
+            btnSubProveedores.Text = "SF CUSTOMERS";
             btnSubProveedores.UseVisualStyleBackColor = false;
             btnSubProveedores.Click += btnProveedores_Click;
             // 
@@ -350,7 +481,10 @@
             ((System.ComponentModel.ISupportInitialize)btnRestore).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnClose).EndInit();
             Menu.ResumeLayout(false);
+            submenuContract.ResumeLayout(false);
+            panel9.ResumeLayout(false);
             submenu.ResumeLayout(false);
+            panel8.ResumeLayout(false);
             panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -381,5 +515,14 @@
         private Panel panel9;
         private Panel submenu;
         private Button btnSearchCust;
+        private Button btnContratos;
+        private Panel panel1;
+        private Panel panel3;
+        private Panel submenuContract;
+        private Button btnSearchContract;
+        private Panel panel12;
+        private Panel panel11;
+        private Button btnInsertContract;
+        private Panel panel13;
     }
 }
