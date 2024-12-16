@@ -86,12 +86,16 @@ namespace Clientes
         private void customizeDesing()
         {
             submenu.Visible = false;
+            submenuContract.Visible = false;
         }
 
         private void hideSubMenu()
         {
             if (submenu.Visible == true)
                 submenu.Visible = false;
+
+            if (submenuContract.Visible == true)
+                submenuContract.Visible = false;
         }
 
         private void showSubMenu(Panel submenu)
@@ -137,6 +141,23 @@ namespace Clientes
         private void btnSearchCust_Click(object sender, EventArgs e)
         {
             openFormPanel(new ConsultaCustSRG());
+            hideSubMenu();
+        }
+
+        private void btnContratos_Click(object sender, EventArgs e)
+        {
+            showSubMenu(submenuContract);
+        }
+
+        private void btnInsertContract_Click(object sender, EventArgs e)
+        {
+            openFormPanel(new AddContractSFOpportunity());
+            hideSubMenu();
+        }
+
+        private void btnSearchContract_Click(object sender, EventArgs e)
+        {
+            openFormPanel(new ViewContractSFOpportunity());
             hideSubMenu();
         }
     }
