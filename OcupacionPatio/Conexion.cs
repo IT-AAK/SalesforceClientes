@@ -106,6 +106,10 @@ namespace Clientes
             cmd.Parameters.AddWithValue("@CustID", "");
             cmd.Parameters.AddWithValue("@NameCust", "");
             cmd.Parameters.AddWithValue("@SAPRG", "");
+            cmd.Parameters.AddWithValue("@SFOID", "");
+            cmd.Parameters.AddWithValue("@ContractID", "");
+            cmd.Parameters.AddWithValue("@IniDate", "");
+            cmd.Parameters.AddWithValue("@EndDate", "");
 
             return cmd;
         }
@@ -121,6 +125,10 @@ namespace Clientes
             cmd.Parameters.AddWithValue("@CustID", "");
             cmd.Parameters.AddWithValue("@NameCust", "");
             cmd.Parameters.AddWithValue("@SAPRG", "");
+            cmd.Parameters.AddWithValue("@SFOID", "");
+            cmd.Parameters.AddWithValue("@ContractID", "");
+            cmd.Parameters.AddWithValue("@IniDate", "");
+            cmd.Parameters.AddWithValue("@EndDate", "");
 
             return cmd;
         }
@@ -139,6 +147,10 @@ namespace Clientes
                 // Se agregan los parámetros para evitar error en la base de datos
                 cmd.Parameters.AddWithValue("@NameCust", "");
                 cmd.Parameters.AddWithValue("@SAPRG", "");
+                cmd.Parameters.AddWithValue("@SFOID", "");
+                cmd.Parameters.AddWithValue("@ContractID", "");
+                cmd.Parameters.AddWithValue("@IniDate", "");
+                cmd.Parameters.AddWithValue("@EndDate", "");
 
                 using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                 {
@@ -174,6 +186,10 @@ namespace Clientes
                     // Se agregan los parámetros para evitar error en la base de datos
                     cmd.Parameters.AddWithValue("@CustID", "");
                     cmd.Parameters.AddWithValue("@SAPRG", "");
+                    cmd.Parameters.AddWithValue("@SFOID", "");
+                    cmd.Parameters.AddWithValue("@ContractID", "");
+                    cmd.Parameters.AddWithValue("@IniDate", "");
+                    cmd.Parameters.AddWithValue("@EndDate", "");
 
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                     {
@@ -234,6 +250,11 @@ namespace Clientes
                     cmd.Parameters.AddWithValue("@CustID",custID);
                     cmd.Parameters.AddWithValue("@NameCust", NameCust);
                     cmd.Parameters.AddWithValue("@SAPRG", sapRegGroup);
+                    // Se agregan los parámetros para evitar error en la base de datos
+                    cmd.Parameters.AddWithValue("@SFOID", "");
+                    cmd.Parameters.AddWithValue("@ContractID", "");
+                    cmd.Parameters.AddWithValue("@IniDate", "");
+                    cmd.Parameters.AddWithValue("@EndDate", "");
 
 
                     // Ejecutar el comando
@@ -265,6 +286,193 @@ namespace Clientes
             cmd.Parameters.AddWithValue("@tynOperacion", operacion);
 
             return cmd;
+        }
+
+
+
+        //================================== Pantalla Registro SFOpportunity =======================================================
+        public SqlCommand visualizarDatosSFOpportunity(int operacion)
+        {
+            SqlCommand cmd = new SqlCommand("zSP_SapRegGroup", conn)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+
+            cmd.Parameters.AddWithValue("@tynOperacion", operacion);
+            cmd.Parameters.AddWithValue("@CustID", "");
+            cmd.Parameters.AddWithValue("@NameCust", "");
+            cmd.Parameters.AddWithValue("@SAPRG", "");
+            cmd.Parameters.AddWithValue("@SFOID", "");
+            cmd.Parameters.AddWithValue("@ContractID", "");
+            cmd.Parameters.AddWithValue("@IniDate", "");
+            cmd.Parameters.AddWithValue("@EndDate", "");
+
+            return cmd;
+        }
+
+        //Visualizar Datos de SFOpportunity
+        public SqlCommand visualizarDatosSFOpportunityLlenos(int operacion)
+        {
+            SqlCommand cmd = new SqlCommand("zSP_SapRegGroup", conn)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+
+            cmd.Parameters.AddWithValue("@tynOperacion", operacion);
+            cmd.Parameters.AddWithValue("@CustID", "");
+            cmd.Parameters.AddWithValue("@NameCust", "");
+            cmd.Parameters.AddWithValue("@SAPRG", "");
+            cmd.Parameters.AddWithValue("@SFOID", "");
+            cmd.Parameters.AddWithValue("@ContractID", "");
+            cmd.Parameters.AddWithValue("@IniDate", "");
+            cmd.Parameters.AddWithValue("@EndDate", "");
+
+            return cmd;
+        }
+
+        //Busqueda dinamica por el ContractID
+        public void FiltrarPorSFOContract(string ContractID, DataGridView dvg)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("zSP_SapRegGroup", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                // Agregamos el parámetro del procedimiento almacenado
+                cmd.Parameters.AddWithValue("@tynOperacion", 7);
+                cmd.Parameters.AddWithValue("@ContractID", "%" + ContractID + "%");
+                // Se agregan los parámetros para evitar error en la base de datos
+                cmd.Parameters.AddWithValue("@CustID", "");
+                cmd.Parameters.AddWithValue("@NameCust", "");
+                cmd.Parameters.AddWithValue("@SAPRG", "");
+                cmd.Parameters.AddWithValue("@SFOID", "");
+                cmd.Parameters.AddWithValue("@IniDate", "");
+                cmd.Parameters.AddWithValue("@EndDate", "");
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                {
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dvg.DataSource = dt;
+                }
+            }
+            catch (SqlException sqlEx)
+            {
+                // Manejo de excepciones específicas de SQL
+                MessageBox.Show("Ocurrió un error con la base de datos: " + sqlEx.Message);
+            }
+            catch (Exception ex)
+            {
+                // Manejo de otras excepciones
+                MessageBox.Show("Ocurrió un error: " + ex.Message);
+            }
+        }
+
+        //Busqueda dinamica por el SFOCustID
+        public void FiltrarPorSFOCustID(string CustID, DataGridView dvg)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("zSP_SapRegGroup", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                // Agregamos el parámetro del procedimiento almacenado
+                cmd.Parameters.AddWithValue("@tynOperacion", 8);
+                cmd.Parameters.AddWithValue("@CustID", "%" + CustID + "%");
+                // Se agregan los parámetros para evitar error en la base de datos
+                cmd.Parameters.AddWithValue("@NameCust", "");
+                cmd.Parameters.AddWithValue("@SAPRG", "");
+                cmd.Parameters.AddWithValue("@SFOID", "");
+                cmd.Parameters.AddWithValue("@ContractID", "");
+                cmd.Parameters.AddWithValue("@IniDate", "");
+                cmd.Parameters.AddWithValue("@EndDate", "");
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                {
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dvg.DataSource = dt;
+                }
+            }
+            catch (SqlException sqlEx)
+            {
+                // Manejo de excepciones específicas de SQL
+                MessageBox.Show("Ocurrió un error con la base de datos: " + sqlEx.Message);
+            }
+            catch (Exception ex)
+            {
+                // Manejo de otras excepciones
+                MessageBox.Show("Ocurrió un error: " + ex.Message);
+            }
+        }
+
+        // Validación de inputs vacíos
+        public bool ValidateInputsSFO(string SFOID, string ContractID, string CustID)
+        {
+            // Verifica si el campo SFOID está vacío
+            if (string.IsNullOrWhiteSpace(SFOID))
+            {
+                MessageBox.Show("El campo SFOpportunity no puede estar vacío.");
+                return false;
+            }
+
+            // Verifica si el campo ContractID está vacío
+            if (string.IsNullOrWhiteSpace(ContractID))
+            {
+                MessageBox.Show("El campo ContractID no puede estar vacío.");
+                return false;
+            }
+
+            // Verifica si el campo CustID está vacío
+            if (string.IsNullOrWhiteSpace(CustID))
+            {
+                MessageBox.Show("El campo CustID no puede estar vacío.");
+                return false;
+            }
+
+            // Si todos los campos tienen datos, retorna true
+            return true;
+        }
+
+        // Insertar datos del SFOpportunity
+        public void InsertSFOpportunity(string SFOID, string ContractID, string CustID, DateTime IniDate, DateTime EndDate)
+        {
+            // Validar que los campos no estén vacíos
+            if (!ValidateInputsSFO(SFOID, ContractID, CustID))
+            {
+                return; // Si la validación falla, no continuar con el insert
+            }
+
+            try
+            {
+                using (SqlCommand cmd = new SqlCommand("zSP_SapRegGroup", conn))
+                {
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    // Configurar los parámetros del comando
+                    cmd.Parameters.AddWithValue("@tynOperacion", 21);
+                    cmd.Parameters.AddWithValue("@SFOID", SFOID);
+                    cmd.Parameters.AddWithValue("@ContractID", ContractID);
+                    cmd.Parameters.AddWithValue("@CustID", CustID);
+                    cmd.Parameters.AddWithValue("@IniDate", IniDate);
+                    cmd.Parameters.AddWithValue("@EndDate", EndDate);
+                    // Se agregan los parámetros para evitar error en la base de datos
+                    cmd.Parameters.AddWithValue("@NameCust", "");
+                    cmd.Parameters.AddWithValue("@SAPRG", "");
+
+
+                    // Ejecutar el comando
+                    cmd.ExecuteNonQuery();
+
+                    // Mostrar mensaje de éxito
+                    MessageBox.Show("Se agregó exitosamente.");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier error
+                MessageBox.Show("Ocurrió un error: " + ex.Message);
+            }
         }
 
         //public SqlCommand VisualizarOcipacionPatio(int operacion)

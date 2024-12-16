@@ -57,7 +57,7 @@
             BtnClean.Name = "BtnClean";
             BtnClean.Size = new Size(180, 60);
             BtnClean.TabIndex = 50;
-            BtnClean.Text = "LIMPIAR";
+            BtnClean.Text = "CLEAR";
             BtnClean.UseVisualStyleBackColor = false;
             BtnClean.Click += BtnClean_Click_1;
             // 
@@ -77,11 +77,11 @@
             label4.Anchor = AnchorStyles.Top;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold);
-            label4.Location = new Point(581, 499);
+            label4.Location = new Point(606, 499);
             label4.Name = "label4";
-            label4.Size = new Size(287, 45);
+            label4.Size = new Size(216, 45);
             label4.TabIndex = 40;
-            label4.Text = "DATOS CLIENTES";
+            label4.Text = "CUSTOMERS";
             // 
             // txtNameCust
             // 
@@ -97,9 +97,9 @@
             label3.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(52, 630);
             label3.Name = "label3";
-            label3.Size = new Size(196, 32);
+            label3.Size = new Size(202, 32);
             label3.TabIndex = 38;
-            label3.Text = "Nombre Cliente";
+            label3.Text = "Customer Name";
             // 
             // txtIDCust
             // 
@@ -115,20 +115,20 @@
             label2.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(52, 574);
             label2.Name = "label2";
-            label2.Size = new Size(127, 32);
+            label2.Size = new Size(160, 32);
             label2.TabIndex = 36;
-            label2.Text = "ID Cliente";
+            label2.Text = "Customer ID";
             // 
             // label1
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(513, 64);
+            label1.Location = new Point(464, 60);
             label1.Name = "label1";
-            label1.Size = new Size(492, 48);
+            label1.Size = new Size(548, 48);
             label1.TabIndex = 35;
-            label1.Text = "CLIENTES SALESFORCE MX\r\n";
+            label1.Text = "CUSTOMERS SALESFORCE MX\r\n";
             // 
             // btnAdd
             // 
@@ -143,7 +143,7 @@
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(180, 60);
             btnAdd.TabIndex = 34;
-            btnAdd.Text = "AGREGAR";
+            btnAdd.Text = "ADD";
             btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click;
             // 

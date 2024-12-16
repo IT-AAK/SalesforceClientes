@@ -72,7 +72,6 @@ C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clie
 C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.Form1.resources
 C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.Properties.Resources.resources
 C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.proveedores.resources
-C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.ProveedoresNuevos.resources
 C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.csproj.GenerateResource.cache
 C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.AssemblyInfoInputs.cache
@@ -97,3 +96,5 @@ C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clie
 C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.genruntimeconfig.cache
 C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\ref\Clientes.dll
 C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.ConsultaCustSRG.resources
+C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.AddContractSFOpportunity.resources
+C:\Users\esva\source\repos\Clientes\OcupacionPatio\obj\Debug\net8.0-windows\Clientes.ViewContractSFOpportunity.resources
